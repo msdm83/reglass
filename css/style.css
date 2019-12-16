@@ -240,7 +240,7 @@ body:after {
       font-family: "icomoon";
       content: "\e5ca";
       position: absolute; }
-    .ul-check li:before {
+    .ul-cross li:before {
         content: "\e5cd";
       }
   .ul-check.white li:before,
