@@ -86,19 +86,17 @@ ymaps.ready(init2);
 //contact page map initialization
 function init1() {
   var myMap = new ymaps.Map('contact_map', {
-    center: [59.932749, 30.436764],
+    center: [59.935390, 30.451630],
     zoom: 11,
     controls: ['zoomControl']
   });
-  /*Заневский проспект, 67к2
-Санкт-Петербург, Россия, 195112
-59.932749, 30.436764*/
+  /*59.935390, 30.451630*/
 
-  var myPlacemark = new ymaps.Placemark([59.932749, 30.436764], {
-    balloonContentHeader: 'Заневский проспект, 67к2',
-    balloonContentBody: 'Заневский проспект, 67к2, Санкт-Петербург',
-    hintContent: 'Заневский проспект, 67к2',
-    balloonContent:'Заневский проспект, 67к2',
+  var myPlacemark = new ymaps.Placemark([59.935390, 30.451630], {
+    balloonContentHeader: 'улица Латышских Стрелков, 31',
+    balloonContentBody: 'Санкт-Петербург, улица Латышских Стрелков, 31',
+    hintContent: 'улица Латышских Стрелков, 31',
+    balloonContent:'улица Латышских Стрелков, 31',
   });
 
   myMap.geoObjects.add(myPlacemark);
