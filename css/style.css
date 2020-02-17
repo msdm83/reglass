@@ -2108,3 +2108,13 @@ figure figcaption {
     .single-text .owl-dots .owl-dot.active > span {
       width: 20px;
       background-color: #fff; }
+.successMessage{
+  border:2px solid #b2bc7c;
+  color:#b2bc7c;
+  padding: 10px;
+  text-align: center;
+  display:none}
+
+.requestMapContainer{
+  border:1px solid #ced4da; width:100%; height:240px;border-radius:30px; overflow:hidden
+}

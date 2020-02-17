@@ -1,5 +1,5 @@
 //points page map initialization
-function init2() {
+function initPointsMap() {
   var myMap = new ymaps.Map('points_map', {
     center: [59.95,30.67],
     zoom: 9,
@@ -82,12 +82,12 @@ function init2() {
   ]};
   objectManager.add(allPoints);
 }
-ymaps.ready(init2);
+ymaps.ready(initPointsMap);
 
 
 
 //contact page map initialization
-function init1() {
+function initContactMap() {
   var myMap = new ymaps.Map('contact_map', {
     center: [59.935390, 30.451630],
     zoom: 11,
@@ -105,4 +105,4 @@ function init1() {
   myMap.geoObjects.add(myPlacemark);
   myPlacemark.balloon.open();
 }
-ymaps.ready(init1);
+ymaps.ready(initContactMap);
