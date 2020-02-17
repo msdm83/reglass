@@ -223,30 +223,41 @@ body:after {
 .overlap-to-top {
   margin-top: -150px; }
 
-.ul-check {
-  margin-bottom: 50px; }
-  .ul-check li {
+.ul-check,
+.ul-cross {
+  margin-bottom: 20px; }
+  .ul-check li,
+  .ul-cross li {
     position: relative;
     padding-left: 35px;
     margin-bottom: 15px;
     line-height: 1.5; }
-    .ul-check li:before {
+    .ul-check li:before,
+    .ul-cross li:before {
       left: 0;
       font-size: 20px;
       top: -.3rem;
       font-family: "icomoon";
       content: "\e5ca";
       position: absolute; }
-  .ul-check.white li:before {
+    .ul-cross li:before {
+        content: "\e5cd";
+      }
+  .ul-check.white li:before,
+  .ul-cross.white li:before {
     color: #fff; }
-  .ul-check.success li:before {
+  .ul-check.success li:before,
+  .ul-cross.success li:before  {
     color: #71bc42; }
-  .ul-check.primary li:before {
+  .ul-check.primary li:before,
+  .ul-cross.primary li:before   {
     color: #fd7e14; }
-  .ul-check li.remove {
+  .ul-check li.remove,
+  .ul-cross li.remove  {
     text-decoration: line-through;
     color: #dee2e6; }
-    .ul-check li.remove:before {
+    .ul-check li.remove:before,
+    .ul-cross li.remove:before,  {
       color: #dee2e6; }
 
 .select-wrap, .wrap-icon {
@@ -563,7 +574,7 @@ body:after {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  background-position: center center; }
+  background-position: left center; }
   .site-blocks-cover.overlay {
     position: relative; }
     .site-blocks-cover.overlay:before {
@@ -2097,3 +2108,13 @@ figure figcaption {
     .single-text .owl-dots .owl-dot.active > span {
       width: 20px;
       background-color: #fff; }
+.successMessage{
+  border:2px solid #b2bc7c;
+  color:#b2bc7c;
+  padding: 10px;
+  text-align: center;
+  display:none}
+
+.requestMapContainer{
+  border:1px solid #ced4da; width:100%; height:240px;border-radius:30px; overflow:hidden
+}
